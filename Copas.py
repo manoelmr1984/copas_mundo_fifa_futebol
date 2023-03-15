@@ -13,12 +13,12 @@ list_campeoes=copas['Country'].values.tolist()
 selected_league = st.sidebar.selectbox('League',list_campeoes)
 #selected_league = st.sidebar.selectbox('League',['Uruguay','England','Germany','Italy','Spain','France'])
 
-#st.sidebar.header("Ano Copa")
-#selected_season = st.sidebar.selectbox('Season', ['2021/2022','2020/2021','2019/2020'])
+st.sidebar.header("Ano Copa")
+selected_season = st.sidebar.selectbox('Season', ['2021/2022','2020/2021','2019/2020'])
 
 # WebScraping Football Data
-#def load_data(league, season):
-def load_data(league):
+def load_data(league, season):
+#def load_data(league):
   
   if selected_league == 'Uruguay':
     league = 'E0'
@@ -33,20 +33,20 @@ def load_data(league):
   if selected_league == 'France':
     league = 'F1'
    
-  #if selected_season == '2021/2022':
-  #  season = '2122'
-  #if selected_season == '2020/2021':
-  #  season = '2021'
-  #if selected_season == '2019/2020':
-  #  season = '1920'
+  if selected_season == '2021/2022':
+    season = '2122'
+  if selected_season == '2020/2021':
+    season = '2021'
+  if selected_season == '2019/2020':
+    season = '1920'
     
-  #url = "https://www.football-data.co.uk/mmz4281/"+season+"/"+league+".csv"
-  #data = pd.read_csv(url)
-  data = pd.read_csv(copas)
+  url = "https://www.football-data.co.uk/mmz4281/"+season+"/"+league+".csv"
+  data = pd.read_csv(url)
+  #data = pd.read_csv(copas)
   return data
 
-#df = load_data(selected_league, selected_season)
-df = load_data(selected_league)
+df = load_data(selected_league, selected_season)
+#df = load_data(selected_league)
 
 st.subheader("Dataframe: "+selected_league)
 st.dataframe(df)

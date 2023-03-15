@@ -21,7 +21,7 @@ def load_data(league, season):
   
   if selected_league == 'Uruguay':#'England':
     league = 'E0'
-   if selected_league == 'England':
+  if selected_league == 'England':
     league = 'E0'
   if selected_league == 'Germany':
     league = 'D1'

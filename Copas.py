@@ -45,7 +45,8 @@ def load_data(league):
   data = pd.read_csv(copas)
   return data
 
-df = load_data(selected_league, selected_season)
+#df = load_data(selected_league, selected_season)
+df = load_data(selected_league)
 
 st.subheader("Dataframe: "+selected_league)
 st.dataframe(df)

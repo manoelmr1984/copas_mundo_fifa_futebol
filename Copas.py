@@ -53,7 +53,7 @@ df = load_data(selected_league, selected_season)
 
 #st.subheader("Dataframe: "+selected_league)
 st.subheader("por manoelmr")
-#st.dataframe(df)
+st.dataframe(df)
 
 #def filedownload(df):
 #    csv = df.to_csv(index=False)

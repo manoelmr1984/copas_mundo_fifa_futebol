@@ -7,10 +7,10 @@ st.title("Copa do Mundo Futebol - FIFA")
 
 copas = pd.read_csv('WorldCups.csv')
 
-st.sidebar.header("País Sede")
-list_campeoes=[]
-list_campeoes=copas['Country'].values.tolist()
-selected_league = st.sidebar.selectbox('League',list_campeoes)
+##st.sidebar.header("País Sede")
+##list_campeoes=[]
+##list_campeoes=copas['Country'].values.tolist()
+##selected_league = st.sidebar.selectbox('League',list_campeoes)
 #selected_league = st.sidebar.selectbox('League',['Uruguay','England','Germany','Italy','Spain','France'])
 
 st.sidebar.header("Ano Copa")

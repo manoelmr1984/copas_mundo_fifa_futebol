@@ -52,7 +52,7 @@ df = load_data(selected_league, selected_season)
 #df = load_data(selected_league)
 
 #st.subheader("Dataframe: "+selected_league)
-st.subheader("Dataframe: "Copa do Mundo)
+st.subheader("por manoelmr")
 #st.dataframe(df)
 
 #def filedownload(df):

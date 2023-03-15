@@ -1,9 +1,8 @@
 import pandas as pd
 
-print("Manoel")
-copas = pd.read_csv('WorldCups.csv')
 
-print(copas)
-print("Campeões",copas['Winner'])
-print("Conta Campeões:",copas['Winner'].nunique())
-print("Gols Marcados:",copas['GoalsScored'].sum())
+st.title("Web APP Footbol Data")
+
+st.sidebar.header("Leagues")
+
+st.sidebar.header("Season")

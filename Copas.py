@@ -28,7 +28,7 @@ def load_data(league, season):
   #if selected_league == 'England':
   #  league = 'E0'
   #if selected_league == 'Germany':
-  league = 'D1'
+  #  league = 'D1'
   #if selected_league == 'Italy':
   #  league = 'I1'
   #if selected_league == 'Spain':
@@ -43,13 +43,14 @@ def load_data(league, season):
   if selected_season == 2014:
     season = '1920'
     
-  url = "https://www.football-data.co.uk/mmz4281/"+season+"/"+league+".csv"
+  #url = "https://www.football-data.co.uk/mmz4281/"+season+"/"+league+".csv"
+  url = "https://www.football-data.co.uk/mmz4281/"+season+"/D1.csv"
   data = pd.read_csv(url)
   #data = pd.read_csv(copas)
   return data
 
-df = load_data(selected_league, selected_season)
-#df = load_data(selected_league)
+#df = load_data(selected_league, selected_season)
+df = load_data(selected_season)
 
 #st.subheader("Dataframe: "+selected_league)
 st.subheader("por manoelmr")

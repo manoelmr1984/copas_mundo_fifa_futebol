@@ -3,12 +3,12 @@ import pandas as pd
 import numpy as np
 import base64
 
-st.title("Copa do Mundo FIFA - Futebol Masculino")
+st.title("Copa do Mundo Futebol - FIFA")
 
-st.sidebar.header("Leagues")
+st.sidebar.header("País Sede")
 selected_league = st.sidebar.selectbox('League',['England','Germany','Italy','Spain','France'])
 
-st.sidebar.header("Season")
+st.sidebar.header("Ano Copa")
 selected_season = st.sidebar.selectbox('Season', ['2021/2022','2020/2021','2019/2020'])
 
 # WebScraping Football Data

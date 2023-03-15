@@ -10,7 +10,6 @@ st.sidebar.header("País Sede")
 #copas = pd.read_csv('https://github.com/manoelmr1984/copas_mundo_fifa_futebol/blob/main/WorldCups.csv')
 #list_campeoes=[]
 #list_campeoes=copas['Country'].values.tolist()
-
 #selected_league = st.sidebar.selectbox('League',list_campeoes)
 selected_league = st.sidebar.selectbox('League',['England','Germany','Italy','Spain','France'])
 
@@ -20,7 +19,7 @@ selected_season = st.sidebar.selectbox('Season', ['2021/2022','2020/2021','2019/
 # WebScraping Football Data
 def load_data(league, season):
   
-  if selected_league == 'England':
+  if selected_league == 'Uruguay':#'England':
     league = 'E0'
   if selected_league == 'Germany':
     league = 'D1'

@@ -37,16 +37,19 @@ def load_data(season):
   #  league = 'F1'
    
   if selected_season == 1930:
-    season = '2223'
+    #season = '2223'
+    season = 1930
   if selected_season == 1950:
-    season = '2021'
+    #season = '2021'
+    season = 1950
   if selected_season == 2014:
-    season = '1920'
+    #season = '1920'
+    season = 2014
     
-  #url = "https://www.football-data.co.uk/mmz4281/"+season+"/"+league+".csv"
-  url = "https://www.football-data.co.uk/mmz4281/"+season+"/D1.csv"
+  ##url = "https://www.football-data.co.uk/mmz4281/"+season+"/"+league+".csv"
+  #url = "https://www.football-data.co.uk/mmz4281/"+season+"/D1.csv"
+  url = pd.read_csv('WorldCups.csv')
   data = pd.read_csv(url)
-  #data = pd.read_csv(copas)
   return data
 
 #df = load_data(selected_league, selected_season)

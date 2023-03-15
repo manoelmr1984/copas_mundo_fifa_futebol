@@ -36,12 +36,12 @@ def load_data(league, season):
   if selected_league == 'France':
     league = 'F1'
    
-  if selected_season == 1930:
-    season = '2122'
-  if selected_season == '1950':
-    season = '2021'
-  if selected_season == '2014':
-    season = '1920'
+  #if selected_season == 1930:
+  season = 1930
+  #if selected_season == '1950':
+  #  season = '2021'
+  #if selected_season == '2014':
+  #  season = '1920'
     
   url = "https://www.football-data.co.uk/mmz4281/"+season+"/"+league+".csv"
   data = pd.read_csv(url)

@@ -20,8 +20,8 @@ selected_season = st.sidebar.selectbox('Season',list_ano)
 #selected_season = st.sidebar.selectbox('Season', ['2021/2022','2020/2021','2019/2020'])
 
 # WebScraping Football Data
-def load_data(league, season):
-#def load_data(league):
+#def load_data(league, season):
+def load_data(season):
   
   #if selected_league == 'Uruguay':
   #  league = 'E0'

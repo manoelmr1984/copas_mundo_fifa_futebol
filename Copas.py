@@ -36,7 +36,7 @@ def load_data(league, season):
   if selected_league == 'France':
     league = 'F1'
    
-  if selected_season == '1930':
+  if selected_season == 1930:
     season = '2122'
   if selected_season == '1950':
     season = '2021'

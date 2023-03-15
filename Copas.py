@@ -48,8 +48,9 @@ def load_data(season):
     
   ##url = "https://www.football-data.co.uk/mmz4281/"+season+"/"+league+".csv"
   #url = "https://www.football-data.co.uk/mmz4281/"+season+"/D1.csv"
-  url = pd.read_csv('WorldCups.csv')
-  data = pd.read_csv(url)
+  #url = pd.read_csv('WorldCups.csv')
+  #data = pd.read_csv(url)
+  data = pd.read_csv(copa)
   return data
 
 #df = load_data(selected_league, selected_season)

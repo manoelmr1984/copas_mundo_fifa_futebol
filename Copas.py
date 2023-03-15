@@ -24,11 +24,11 @@ def load_data(league, season):
 #def load_data(league):
   
   #if selected_league == 'Uruguay':
-  league = 'E0'
+  #  league = 'E0'
   #if selected_league == 'England':
   #  league = 'E0'
   #if selected_league == 'Germany':
-  #  league = 'D1'
+  league = 'D1'
   #if selected_league == 'Italy':
   #  league = 'I1'
   #if selected_league == 'Spain':
@@ -37,7 +37,7 @@ def load_data(league, season):
   #  league = 'F1'
    
   if selected_season == 1930:
-    season = 1930
+    season = '2223'
   if selected_season == 1950:
     season = '2021'
   if selected_season == 2014:

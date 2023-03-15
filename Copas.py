@@ -1,5 +1,6 @@
 import pandas as pd
 
+print("Manoel")
 copas = pd.read_csv('WorldCups.csv')
 
 print(copas)

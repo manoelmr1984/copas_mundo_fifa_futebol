@@ -23,18 +23,18 @@ selected_season = st.sidebar.selectbox('Season',list_ano)
 def load_data(league, season):
 #def load_data(league):
   
-  if selected_league == 'Uruguay':
-    league = 'E0'
-  if selected_league == 'England':
-    league = 'E0'
-  if selected_league == 'Germany':
-    league = 'D1'
-  if selected_league == 'Italy':
-    league = 'I1'
-  if selected_league == 'Spain':
-    league = 'SP1'
-  if selected_league == 'France':
-    league = 'F1'
+  #if selected_league == 'Uruguay':
+  league = 'E0'
+  #if selected_league == 'England':
+  #  league = 'E0'
+  #if selected_league == 'Germany':
+  #  league = 'D1'
+  #if selected_league == 'Italy':
+  #  league = 'I1'
+  #if selected_league == 'Spain':
+  #  league = 'SP1'
+  #if selected_league == 'France':
+  #  league = 'F1'
    
   if selected_season == 1930:
     season = 1930

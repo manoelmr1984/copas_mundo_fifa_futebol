@@ -38,13 +38,13 @@ def load_data(season):
    
   if selected_season == 1930:
     #season = '2223'
-    season = '1930'
+    season = 1930
   if selected_season == 1950:
     #season = '2021'
-    season = '1950'
+    season = 1950
   if selected_season == 2014:
     #season = '1920'
-    season = '2014'
+    season = 2014
     
   ##url = "https://www.football-data.co.uk/mmz4281/"+season+"/"+league+".csv"
   #url = "https://www.football-data.co.uk/mmz4281/"+season+"/D1.csv"

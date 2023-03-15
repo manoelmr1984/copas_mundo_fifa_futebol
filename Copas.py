@@ -51,8 +51,9 @@ def load_data(league, season):
 df = load_data(selected_league, selected_season)
 #df = load_data(selected_league)
 
-st.subheader("Dataframe: "+selected_league)
-st.dataframe(df)
+#st.subheader("Dataframe: "+selected_league)
+st.subheader("Dataframe: "Copa do Mundo)
+#st.dataframe(df)
 
 #def filedownload(df):
 #    csv = df.to_csv(index=False)

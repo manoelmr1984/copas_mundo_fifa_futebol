@@ -34,5 +34,5 @@ def load_campeao(campeao):
 
 df_campeao = load_campeao(selected_copa)
 df_campeao = df_campeao.set_index('Winner')
-st.subheader("CAMPEÃO:  " + selected_copa)
+st.subheader("CAMPEÃO:  " + selected_copa[2])
 st.dataframe(df_campeao)

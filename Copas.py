@@ -6,6 +6,8 @@ import pandas as pd
 st.title("Copa do Mundo Futebol - FIFA")
 
 copas = pd.read_csv('WorldCups.csv')
+copas['Year'] = copas['Year'].astype(str)
+
 st.sidebar.header("Ano Copa")
 list_ano=[]
 list_ano=copas['Year'].values.tolist()

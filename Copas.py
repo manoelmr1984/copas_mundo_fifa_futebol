@@ -23,4 +23,4 @@ st.dataframe(df_copas)
 
 
 
-st.subheader('Winner')
+st.subheader(df_copas['Winner'])

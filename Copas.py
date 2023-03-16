@@ -20,3 +20,7 @@ df = load_data(selected_copa)
 df=df.set_index('Year_Country')
 st.subheader("Copa de "+selected_copa)
 st.dataframe(df)
+
+campeao = df['Winner']
+#print(campeao)
+st.dataframe(campeao)

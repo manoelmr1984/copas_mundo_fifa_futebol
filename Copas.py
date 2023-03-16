@@ -26,4 +26,4 @@ def load_campeao(campeao):
   return copas.loc[copas['Winner']==campeao]
 
 df = load_campeao(selected_copa)
-st.subheader("Copa de "+selected_copa)
+st.subheader(campeao)

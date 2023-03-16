@@ -18,10 +18,10 @@ def load_data(ano_anfitriao):
 
 df_copas = load_data(selected_copa)
 df_copas = df_copas.set_index('Year_Country')
-st.subheader("Copa de "+selected_copa)
+st.subheader("Copa de " + selected_copa)
 st.dataframe(df_copas)
 
 #list_campeoes = []
 #list_campeoes = df_copas['Winner'].values.tolist()
 list_campeoes = df_copas['Winner']
-st.subheader(list_campeoes)
+st.subheader("Campeão: " + list_campeoes)

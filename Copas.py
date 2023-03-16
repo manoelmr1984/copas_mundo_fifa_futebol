@@ -12,25 +12,11 @@ list_copa = []
 list_copa = copas['Year_Country'].values.tolist()
 selected_copa = st.sidebar.selectbox('',list_copa)
 
-def load_data(ano_anfitriao):   
+def load_copa(ano_anfitriao):   
   ano_anfitriao = selected_copa
   return copas.loc[copas['Year_Country'] == ano_anfitriao]
 
-df_copas = load_data(selected_copa)
+df_copas = load_copa(selected_copa)
 df_copas = df_copas.set_index('Year_Country')
 st.subheader("Copa de " + selected_copa)
 st.dataframe(df_copas)
-
-
-def load_campeao(campeao_copa)
-  campeao = selected_copa
-  return copas.loc[copas['Winner'] == campeao_copa]
-
-df_campeao = load_campeao(campeao_copa)
-st.subheader("Campeão: " + campeao_copa)
-  
-
-#list_campeoes = []
-#list_campeoes = df_copas['Winner'].values.tolist()
-#list_campeoes = df_copas['Winner']
-#st.subheader("Campeão: " + list_campeoes[3])

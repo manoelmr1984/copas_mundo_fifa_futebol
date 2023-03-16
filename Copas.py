@@ -7,10 +7,10 @@ copas = pd.read_csv('WorldCups.csv')
 copas['Year'] = copas['Year'].astype(str)
 copas['Year_Country'] = copas['Year']+" - "+copas['Country']
 
-st.sidebar.header("Selecione a Copa")
+st.sidebar.header("FILTROS")
 list_year_country = []
 list_year_country = copas['Year_Country'].values.tolist()
-selected_copa = st.sidebar.selectbox(list_year_country)
+selected_copa = st.sidebar.selectbox('Selecione a Copa',list_year_country)
 
 
 df_campeao = copas.loc[copas['Year_Country'] == selected_copa]

@@ -19,8 +19,9 @@ def load_data(season):
   if selected_season == '2014':
     season = '2014'
     
-  data = pd.read_csv('WorldCups.csv')
-  return data
+  #data = pd.read_csv('WorldCups.csv')
+  #return data
+  return copas
 
 df = load_data(selected_season)
 

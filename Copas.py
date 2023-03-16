@@ -21,5 +21,5 @@ df = df.set_index('Year_Country')
 st.subheader("Copa de "+selected_copa)
 st.dataframe(df)
 
-campeao = df.loc[df['Winner']]
+campeao = df['Year_Country'].values.tolist()
 st.subheader(camepao)

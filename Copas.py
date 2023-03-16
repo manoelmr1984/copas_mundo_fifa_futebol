@@ -6,10 +6,9 @@ import pandas as pd
 st.title("Copa do Mundo Futebol - FIFA")
 
 copas = pd.read_csv('WorldCups.csv')
-
 st.sidebar.header("Ano Copa")
 list_ano=[]
-list_ano=str(copas['Year'].values.tolist())
+list_ano=copas['Year'].values.tolist()
 selected_season = st.sidebar.selectbox('Season',list_ano)
 
 def load_data(season):   

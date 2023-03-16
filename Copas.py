@@ -23,9 +23,10 @@ def load_data(season):
     
   season = selected_season
 
-  return copas
+  
+return copas
 
-#df = load_data(selected_season)
+df = load_data(selected_season)
 
 st.subheader("Copa de "+selected_season)
 st.dataframe(df)

@@ -21,7 +21,16 @@ df_copas = df_copas.set_index('Year_Country')
 st.subheader("Copa de " + selected_copa)
 st.dataframe(df_copas)
 
-list_campeoes = []
-list_campeoes = df_copas['Winner'].values.tolist()
+
+def load_campeao(campeao_copa)
+  campeao = selected_copa
+  return copas.loc[copas['Winner'] == campeao_copa]
+
+df_campeao = load_campeao(campeao_copa)
+st.subheader("Campeão: " + campeao_copa)
+  
+
+#list_campeoes = []
+#list_campeoes = df_copas['Winner'].values.tolist()
 #list_campeoes = df_copas['Winner']
-st.subheader("Campeão: " + list_campeoes[3])
+#st.subheader("Campeão: " + list_campeoes[3])

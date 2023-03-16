@@ -24,4 +24,4 @@ st.dataframe(df_copas)
 #list_campeoes = []
 #list_campeoes = df_copas['Winner'].values.tolist()
 campeao = df_copas['Winner'].values
-st.subheader(list_campeoes)
+st.subheader(campeao)

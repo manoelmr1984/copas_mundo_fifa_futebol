@@ -20,4 +20,4 @@ st.dataframe(df_copas)
 
 
 
-st.subheader("CAMPEÃO: " + df_campeao['Winner'])
+st.subheader("CAMPEÃO: " + df_copas['Winner'])

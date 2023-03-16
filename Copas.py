@@ -20,3 +20,7 @@ df_copas = load_copa(selected_copa)
 df_copas = df_copas.set_index('Year_Country')
 st.subheader("Copa de " + selected_copa)
 st.dataframe(df_copas)
+
+
+
+st.subheader('Winner')

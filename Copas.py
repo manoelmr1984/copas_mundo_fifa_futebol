@@ -7,7 +7,7 @@ st.title("Copa do Mundo Futebol - FIFA")
 
 copas = pd.read_csv('WorldCups.csv')
 copas['Year'] = copas['Year'].astype(str)
-copas.insert(loc=0, column='Year_Country', value=['Year'])
+#copas.insert(loc=0, column='Year_Country', value=['Year'])
 
 st.sidebar.header("Ano Copa")
 list_ano=[]

@@ -12,7 +12,7 @@ list_year_country = []
 list_year_country = copas['Year_Country'].values.tolist()
 selected_copa = st.sidebar.selectbox('',list_year_country)
 
-def load_copa(year_country):   
+def load_copa(year_country):
   year_country = selected_copa
   return copas.loc[copas['Year_Country'] == year_country]
 
@@ -25,3 +25,9 @@ st.dataframe(df_copas)
 #list_campeoes = df_copas['Winner'].values.tolist()
 campeao = df_copas['Winner'].values
 st.subheader(campeao)
+
+
+
+def load_campeao(campeao): 
+  campeao = selected_copa[3]
+  return copas.loc[copas['Winner'] == campeao]

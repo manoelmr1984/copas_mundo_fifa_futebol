@@ -7,14 +7,14 @@ copas = pd.read_csv('WorldCups.csv')
 copas['Year'] = copas['Year'].astype(str)
 copas['Year_Country'] = copas['Year']+" - "+copas['Country']
 
-st.sidebar.header("Ano Copa")
+st.sidebar.header("Ano/Anfitrião da Copa")
 list_copa=[]
 list_copa=copas['Year_Country'].values.tolist()
-selected_copa = st.sidebar.selectbox('Season',list_copa)
+selected_copa = st.sidebar.selectbox('',list_copa)
 
-def load_data(season):   
-  season = selected_copa
-  return copas.loc[copas['Year_Country']==season]
+def load_data(ano_anfitriao):   
+  ano_anfitriao = selected_copa
+  return copas.loc[copas['Year_Country']==ano_anfitriao]
 
 df = load_data(selected_copa)
 df=df.set_index('Year_Country')

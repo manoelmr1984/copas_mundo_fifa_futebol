@@ -17,10 +17,16 @@ def load_data(ano_anfitriao):
   return copas.loc[copas['Year_Country']==ano_anfitriao]
 
 df = load_data(selected_copa)
-df=df.set_index('Year_Country')
+df = df.set_index('Year_Country')
 st.subheader("Copa de "+selected_copa)
 st.dataframe(df)
 
-campeao = df['Winner']
-st.subheader(campeao)
-st.dataframe(campeao)
+#campeao = df['Winner']
+#st.subheader(campeao)
+#st.dataframe(campeao)
+
+def load_campeao(campeao):   
+  campeao = selected_copa
+  return copas.loc[copas['Winner']==ano_anfitriao]
+
+st.subheader("Copa de "+selected_copa)

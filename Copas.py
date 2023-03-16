@@ -21,6 +21,6 @@ df_copas = df_copas.set_index('Year_Country')
 st.subheader("Copa de "+selected_copa)
 st.dataframe(df_copas)
 
-list_campeoes = ['Manoel','Marques','Ribeiro']
-#list_campeoes = df_copas['Year_Country'].values.tolist()
-st.subheader(list_campeoes[1])
+list_campeoes = []
+list_campeoes = copas['Winner'].values.tolist()
+st.subheader(list_campeoes)

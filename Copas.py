@@ -20,12 +20,11 @@ def load_data(season):
     season = '1950'
   if selected_season == '2014':
     season = '2014'
-    
-  #data = pd.read_csv('WorldCups.csv')
-  #return data
+
   return copas
 
 df = load_data(selected_season)
 
-st.subheader("por manoelmr")
+#st.subheader("por manoelmr")
+st.subheader("Dataframe: "+selected_season)
 st.dataframe(df)

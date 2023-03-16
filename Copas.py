@@ -10,7 +10,7 @@ copas = pd.read_csv('WorldCups.csv')
 st.sidebar.header("Ano Copa")
 list_ano=[]
 list_ano=copas['Year'].values.tolist()
-selected_season = st.sidebar.selectbox('Season',list_ano)
+selected_season = st.sidebar.selectbox('Season',str(list_ano))
 
 def load_data(season):   
   if selected_season == 1930:

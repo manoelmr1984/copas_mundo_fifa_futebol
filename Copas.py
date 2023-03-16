@@ -23,5 +23,4 @@ st.dataframe(df_copas)
 
 list = []
 list = df_copas['Winner'].values.tolist()
-#list = list.loc
-st.subheader(list)
+st.subheader("CAMPEÃO: "+list)

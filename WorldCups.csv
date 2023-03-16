@@ -1,22 +1,22 @@
 Year,Country,Winner,Runners-Up,Third,Fourth,GoalsScored,QualifiedTeams,MatchesPlayed,Attendance,LogoCup,FlagWinner
 1930,Uruguay,Uruguay,Argentina,USA,Yugoslavia,70,13,18,590.549,https://upload.wikimedia.org/wikipedia/commons/4/42/Uruguay_1930_World_Cup.jpg,https://upload.wikimedia.org/wikipedia/pt/0/04/AUF.png
-1934,Italy,Italy,Czechoslovakia,Germany,Austria,70,16,17,363.000,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/3?tx=c_fill,g_auto,q_auto,w_150,https://upload.wikimedia.org/wikipedia/commons/b/bf/Logo_Italy_National_Football_Team_-_2023.svg
-1938,France,Italy,Hungary,Brazil,Sweden,84,15,18,375.700,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/5?tx=c_fill,g_auto,q_auto,w_150,https://upload.wikimedia.org/wikipedia/commons/b/bf/Logo_Italy_National_Football_Team_-_2023.svg
-1950,Brazil,Uruguay,Brazil,Sweden,Spain,88,13,22,1.045.246,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/7?tx=c_fill,g_auto,q_auto,w_150,https://upload.wikimedia.org/wikipedia/pt/0/04/AUF.png
-1954,Switzerland,Germany FR,Hungary,Austria,Uruguay,140,16,26,768.607,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/9?tx=c_fill,g_auto,q_auto,w_150,
-1958,Sweden,Brazil,Sweden,France,Germany FR,126,16,35,819.810,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/15?tx=c_fill,g_auto,q_auto,w_150,https://upload.wikimedia.org/wikipedia/pt/2/2b/Confedera%C3%A7%C3%A3o_Brasileira_de_Futebol_2019.svg
-1962,Chile,Brazil,Czechoslovakia,Chile,Yugoslavia,89,16,32,893.172,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/21?tx=c_fill,g_auto,q_auto,w_150,https://upload.wikimedia.org/wikipedia/pt/2/2b/Confedera%C3%A7%C3%A3o_Brasileira_de_Futebol_2019.svg
-1966,England,England,Germany FR,Portugal,Soviet Union,89,16,32,1.563.135,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/26?tx=c_fill,g_auto,q_auto,w_150,
-1970,Mexico,Brazil,Italy,Germany FR,Uruguay,95,16,32,1.603.975,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/32?tx=c_fill,g_auto,q_auto,w_150,https://upload.wikimedia.org/wikipedia/pt/2/2b/Confedera%C3%A7%C3%A3o_Brasileira_de_Futebol_2019.svg
-1974,Germany,Germany FR,Netherlands,Poland,Brazil,97,16,38,1.865.753,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/39?tx=c_fill,g_auto,q_auto,w_150,
-1978,Argentina,Argentina,Netherlands,Brazil,Italy,102,16,38,1.545.791,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/50?tx=c_fill,g_auto,q_auto,w_150,
-1982,Spain,Italy,Germany FR,Poland,France,146,24,52,2.109.723,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/59?tx=c_fill,g_auto,q_auto,w_150,
-1986,Mexico,Argentina,Germany FR,France,Belgium,132,24,52,2.394.031,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/68?tx=c_fill,g_auto,q_auto,w_150,
-1990,Italy,Germany FR,Argentina,Italy,England,115,24,52,2.516.215,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/76?tx=c_fill,g_auto,q_auto,w_150,
-1994,USA,Brazil,Italy,Sweden,Bulgaria,141,24,52,3.587.538,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/84?tx=c_fill,g_auto,q_auto,w_150,https://upload.wikimedia.org/wikipedia/pt/2/2b/Confedera%C3%A7%C3%A3o_Brasileira_de_Futebol_2019.svg
-1998,France,France,Brazil,Croatia,Netherlands,171,32,64,2.785.100,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/1013?tx=c_fill,g_auto,q_auto,w_150,https://upload.wikimedia.org/wikipedia/pt/2/2b/Confedera%C3%A7%C3%A3o_Brasileira_de_Futebol_2019.svg
-2002,Korea/Japan,Brazil,Germany,Turkey,Korea Republic,161,32,64,2.705.197,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/4395?tx=c_fill,g_auto,q_auto,w_150,https://upload.wikimedia.org/wikipedia/pt/2/2b/Confedera%C3%A7%C3%A3o_Brasileira_de_Futebol_2019.svg
-2006,Germany,Italy,France,Germany,Portugal,147,32,64,3.359.439,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/9741?tx=c_fill,g_auto,q_auto,w_150,
+1934,Italy,Italy,Czechoslovakia,Germany,Austria,70,16,17,363.000,,https://upload.wikimedia.org/wikipedia/commons/b/bf/Logo_Italy_National_Football_Team_-_2023.svg
+1938,France,Italy,Hungary,Brazil,Sweden,84,15,18,375.700,,https://upload.wikimedia.org/wikipedia/commons/b/bf/Logo_Italy_National_Football_Team_-_2023.svg
+1950,Brazil,Uruguay,Brazil,Sweden,Spain,88,13,22,1.045.246,,https://upload.wikimedia.org/wikipedia/pt/0/04/AUF.png
+1954,Switzerland,Germany FR,Hungary,Austria,Uruguay,140,16,26,768.607,,https://upload.wikimedia.org/wikipedia/pt/a/a9/DFBEagle.png?20221128180821
+1958,Sweden,Brazil,Sweden,France,Germany FR,126,16,35,819.810,,https://upload.wikimedia.org/wikipedia/pt/2/2b/Confedera%C3%A7%C3%A3o_Brasileira_de_Futebol_2019.svg
+1962,Chile,Brazil,Czechoslovakia,Chile,Yugoslavia,89,16,32,893.172,,https://upload.wikimedia.org/wikipedia/pt/2/2b/Confedera%C3%A7%C3%A3o_Brasileira_de_Futebol_2019.svg
+1966,England,England,Germany FR,Portugal,Soviet Union,89,16,32,1.563.135,,https://upload.wikimedia.org/wikipedia/pt/thumb/2/2e/England_crest_2009.svg.png/225px-England_crest_2009.svg.png
+1970,Mexico,Brazil,Italy,Germany FR,Uruguay,95,16,32,1.603.975,,https://upload.wikimedia.org/wikipedia/pt/2/2b/Confedera%C3%A7%C3%A3o_Brasileira_de_Futebol_2019.svg
+1974,Germany,Germany FR,Netherlands,Poland,Brazil,97,16,38,1.865.753,,https://upload.wikimedia.org/wikipedia/pt/a/a9/DFBEagle.png?20221128180821
+1978,Argentina,Argentina,Netherlands,Brazil,Italy,102,16,38,1.545.791,,https://cloudinary.fifa.com/api/v3/picture/flags-sq-4/ARG?tx=c_fill,g_auto,q_auto
+1982,Spain,Italy,Germany FR,Poland,France,146,24,52,2.109.723,,https://upload.wikimedia.org/wikipedia/commons/b/bf/Logo_Italy_National_Football_Team_-_2023.svg
+1986,Mexico,Argentina,Germany FR,France,Belgium,132,24,52,2.394.031,,https://cloudinary.fifa.com/api/v3/picture/flags-sq-4/ARG?tx=c_fill,g_auto,q_auto
+1990,Italy,Germany FR,Argentina,Italy,England,115,24,52,2.516.215,,https://upload.wikimedia.org/wikipedia/pt/a/a9/DFBEagle.png?20221128180821
+1994,USA,Brazil,Italy,Sweden,Bulgaria,141,24,52,3.587.538,,https://upload.wikimedia.org/wikipedia/pt/2/2b/Confedera%C3%A7%C3%A3o_Brasileira_de_Futebol_2019.svg
+1998,France,France,Brazil,Croatia,Netherlands,171,32,64,2.785.100,,https://upload.wikimedia.org/wikipedia/pt/2/2b/Confedera%C3%A7%C3%A3o_Brasileira_de_Futebol_2019.svg
+2002,Korea/Japan,Brazil,Germany,Turkey,Korea Republic,161,32,64,2.705.197,,https://upload.wikimedia.org/wikipedia/pt/2/2b/Confedera%C3%A7%C3%A3o_Brasileira_de_Futebol_2019.svg
+2006,Germany,Italy,France,Germany,Portugal,147,32,64,3.359.439,,https://upload.wikimedia.org/wikipedia/commons/b/bf/Logo_Italy_National_Football_Team_-_2023.svg
 2010,South Africa,Spain,Netherlands,Germany,Uruguay,145,32,64,3.178.856,https://upload.wikimedia.org/wikipedia/pt/0/0d/2010_FIFA_World_Cup.svg,
 2014,Brazil,Germany,Argentina,Netherlands,Brazil,171,32,64,4.319.243,https://upload.wikimedia.org/wikipedia/pt/4/48/Mundial-2014-Brasil-1.svg,
 2018,Russia,France,Croatia,Belgium,England,169,32,64,3.031.768,https://upload.wikimedia.org/wikipedia/pt/6/67/2018_FIFA_World_Cup.svg,https://upload.wikimedia.org/wikipedia/pt/2/2b/Confedera%C3%A7%C3%A3o_Brasileira_de_Futebol_2019.svg

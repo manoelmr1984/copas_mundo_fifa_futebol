@@ -26,5 +26,5 @@ def load_data(season):
 df = load_data(selected_season)
 
 #st.subheader("por manoelmr")
-st.subheader("Dataframe: "+selected_season)
+st.subheader("Copa de "+selected_season)
 st.dataframe(df)

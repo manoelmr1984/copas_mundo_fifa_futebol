@@ -20,6 +20,6 @@ def load_data(season):
   return copas.loc[copas['Year']==season]
 
 df = load_data(selected_season)
-df=df.set_index('Year')
+df=df.set_index('Year_Country')
 st.subheader("Copa de "+selected_season)
 st.dataframe(df)

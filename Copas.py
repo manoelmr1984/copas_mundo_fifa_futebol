@@ -14,12 +14,14 @@ list_ano=copas['Year'].values.tolist()
 selected_season = st.sidebar.selectbox('Season',list_ano)
 
 def load_data(season):   
-  if selected_season == '1930':
-    season = '1930'
-  if selected_season == '1950':
-    season = '1950'
-  if selected_season == '2014':
-    season = '2014'
+  #if selected_season == '1930':
+  #  season = '1930'
+  #if selected_season == '1950':
+  #  season = '1950'
+  #if selected_season == '2014':
+  #  season = '2014'
+    
+  season = selected_season
 
   return copas
 

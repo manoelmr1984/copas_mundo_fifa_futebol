@@ -33,6 +33,6 @@ def load_campeao(campeao):
   return copas.loc[copas['Winner'] == campeao]
 
 df_campeao = load_campeao(selected_copa[3])
-df_campeao = df_campeao.set_index('Winner')
-st.subheader("Copa de " + selected_copa[3])
+#df_campeao = df_campeao.set_index('Winner')
+st.subheader("CAMPEÃO:  " + selected_copa[3])
 st.dataframe(df_campeao)

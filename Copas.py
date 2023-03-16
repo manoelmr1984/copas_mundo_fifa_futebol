@@ -22,5 +22,5 @@ st.subheader("Copa de "+selected_copa)
 st.dataframe(df)
 
 campeao = df['Winner']
-#print(campeao)
+print(campeao)
 st.dataframe(campeao)

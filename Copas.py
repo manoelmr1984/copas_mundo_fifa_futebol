@@ -5,7 +5,7 @@ import pandas as pd
 
 st.title("Copa do Mundo Futebol - FIFA")
 
-copas = pd.read_csv('WorldCups.csv')
+copas = pd.read_csv('WorldCups.csv', index=False)
 copas['Year'] = copas['Year'].astype(str)
 
 st.sidebar.header("Ano Copa")

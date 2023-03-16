@@ -21,7 +21,7 @@ selected_season = st.sidebar.selectbox('Season',list_ano)
 #  if selected_season == '2014':
 #    season = '2014'
 
-  return copas
+return copas
 
 df = load_data(selected_season)
 

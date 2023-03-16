@@ -26,4 +26,5 @@ st.dataframe(df)
 #  return copas.loc[copas['Winner']==campeao]
 
 #df = load_campeao(selected_copa)
-st.subheader(selected_copa)
+campeao = copas.loc[copas['Winner']==ano_anfitriao])
+st.subheader(campeao)

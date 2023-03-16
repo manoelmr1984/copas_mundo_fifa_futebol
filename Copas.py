@@ -8,13 +8,13 @@ copas['Year'] = copas['Year'].astype(str)
 copas['Year_Country'] = copas['Year']+" - "+copas['Country']
 
 st.sidebar.header("Selecione a Copa")
-list_copa = []
-list_copa = copas['Year_Country'].values.tolist()
-selected_copa = st.sidebar.selectbox('',list_copa)
+list_year_country = []
+list_year_country = copas['Year_Country'].values.tolist()
+selected_copa = st.sidebar.selectbox('',list_year_country)
 
-def load_copa(ano_anfitriao):   
-  ano_anfitriao = selected_copa
-  return copas.loc[copas['Year_Country'] == ano_anfitriao]
+def load_copa(year_country):   
+  year_country = selected_copa
+  return copas.loc[copas['Year_Country'] == year_country]
 
 df_copas = load_copa(selected_copa)
 df_copas = df_copas.set_index('Year_Country')

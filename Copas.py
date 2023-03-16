@@ -7,7 +7,7 @@ copas = pd.read_csv('WorldCups.csv')
 copas['Year'] = copas['Year'].astype(str)
 copas['Year_Country'] = copas['Year']+" - "+copas['Country']
 
-st.sidebar.header("Ano/Anfitrião da Copa")
+st.sidebar.header("Selecione a Copa")
 list_copa=[]
 list_copa=copas['Year_Country'].values.tolist()
 selected_copa = st.sidebar.selectbox('',list_copa)

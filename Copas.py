@@ -15,7 +15,8 @@ selected_season = st.sidebar.selectbox('Season',list_ano)
 
 def load_data(season):   
   season = selected_season
-  return copas
+  #return copas
+  return copas.loc[copas['Year']==season]
 
 df = load_data(selected_season)
 

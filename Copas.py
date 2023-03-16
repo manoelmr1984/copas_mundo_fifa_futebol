@@ -21,9 +21,9 @@ df = df.set_index('Year_Country')
 st.subheader("Copa de "+selected_copa)
 st.dataframe(df)
 
-def load_campeao(campeao):   
-  campeao = selected_copa
-  return copas.loc[copas['Winner']==campeao]
+#def load_campeao(campeao):   
+#  campeao = selected_copa
+#  return copas.loc[copas['Winner']==campeao]
 
-df = load_campeao(selected_copa)
-st.subheader(campeao)
+#df = load_campeao(selected_copa)
+st.subheader(selected_copa)

@@ -12,12 +12,10 @@ list_year_country = []
 list_year_country = copas['Year_Country'].values.tolist()
 selected_copa = st.sidebar.selectbox('Selecione a Copa',list_year_country)
 
-
 df_copas = copas.loc[copas['Year_Country'] == selected_copa]
 df_copas = df_copas.set_index('Year_Country')
 st.subheader("Copa de " + selected_copa)
 st.dataframe(df_copas)
 
-
-campeao = df_copas['Winner']
+campeao = df_copas['Winner'].values
 st.subheader("CAMPEÃO: " + campeao)

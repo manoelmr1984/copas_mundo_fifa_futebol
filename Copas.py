@@ -22,5 +22,6 @@ st.subheader("Copa de " + selected_copa)
 st.dataframe(df_copas)
 
 list = []
-list = copas['Winner'].values.tolist()
+list = df_copas['Winner'].values.tolist()
+#list = list.loc
 st.subheader(list)

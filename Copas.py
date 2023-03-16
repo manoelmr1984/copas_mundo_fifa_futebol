@@ -22,7 +22,7 @@ st.subheader("Copa de " + selected_copa)
 st.dataframe(df_copas)
 
 
-campeao = df_copas.loc[df_copas['Year_Country'] == selected_copa]
+campeao = copas.loc[copas['Year_Country'] == selected_copa]
 st.subheader(campeao)
 
 #list_campeoes = []

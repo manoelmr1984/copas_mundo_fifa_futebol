@@ -5,7 +5,7 @@ import pandas as pd
 
 st.title("Copa do Mundo Futebol - FIFA")
 
-copas = pd.read_csv('WorldCups.csv', index=False)
+copas = pd.read_csv('WorldCups.csv')
 copas['Year'] = copas['Year'].astype(str)
 
 st.sidebar.header("Ano Copa")
@@ -21,4 +21,4 @@ def load_data(season):
 df = load_data(selected_season)
 
 st.subheader("Copa de "+selected_season)
-st.dataframe(df)
+st.dataframe(df, index=False)

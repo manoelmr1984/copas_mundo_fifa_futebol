@@ -1,7 +1,7 @@
 Year,Country,Winner,Runners-Up,Third,Fourth,GoalsScored,QualifiedTeams,MatchesPlayed,Attendance,LogoCup,FlagWinner
 1930,Uruguay,Uruguay,Argentina,USA,Yugoslavia,70,13,18,590.549,https://upload.wikimedia.org/wikipedia/commons/4/42/Uruguay_1930_World_Cup.jpg,https://upload.wikimedia.org/wikipedia/pt/0/04/AUF.png
-1934,Italy,Italy,Czechoslovakia,Germany,Austria,70,16,17,363.000,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/3?tx=c_fill,g_auto,q_auto,w_150,
-1938,France,Italy,Hungary,Brazil,Sweden,84,15,18,375.700,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/5?tx=c_fill,g_auto,q_auto,w_150,
+1934,Italy,Italy,Czechoslovakia,Germany,Austria,70,16,17,363.000,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/3?tx=c_fill,g_auto,q_auto,w_150,https://upload.wikimedia.org/wikipedia/commons/b/bf/Logo_Italy_National_Football_Team_-_2023.svg
+1938,France,Italy,Hungary,Brazil,Sweden,84,15,18,375.700,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/5?tx=c_fill,g_auto,q_auto,w_150,https://upload.wikimedia.org/wikipedia/commons/b/bf/Logo_Italy_National_Football_Team_-_2023.svg
 1950,Brazil,Uruguay,Brazil,Sweden,Spain,88,13,22,1.045.246,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/7?tx=c_fill,g_auto,q_auto,w_150,https://upload.wikimedia.org/wikipedia/pt/0/04/AUF.png
 1954,Switzerland,Germany FR,Hungary,Austria,Uruguay,140,16,26,768.607,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/9?tx=c_fill,g_auto,q_auto,w_150,
 1958,Sweden,Brazil,Sweden,France,Germany FR,126,16,35,819.810,https://cloudinary.fifa.com/api/v1/picture/tournaments-sq-4/15?tx=c_fill,g_auto,q_auto,w_150,https://upload.wikimedia.org/wikipedia/pt/2/2b/Confedera%C3%A7%C3%A3o_Brasileira_de_Futebol_2019.svg

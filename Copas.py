@@ -23,4 +23,4 @@ df = load_data(selected_season)
 st.subheader("Copa de "+selected_season)
 st.dataframe(df)
 
-campeao = copas['Winner'].loc[copas['Year']==season]
+campeao = df['Winner']

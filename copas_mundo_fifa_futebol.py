@@ -4,7 +4,6 @@ import pandas as pd
 
 
 #carregando os dados
-#copas = pd.read_excel('bd.xlsx',sheet_name='copas')
 copas = pd.read_csv('Copas.csv')
 partidas = pd.read_csv('Partidas.csv')
 

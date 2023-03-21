@@ -1,7 +1,7 @@
 #importando bibliotecas
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 #carregando os dados
 copas = pd.read_excel('bd.xlsx',sheet_name='copas')

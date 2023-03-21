@@ -4,8 +4,9 @@ import pandas as pd
 
 
 #carregando os dados
-copas = pd.read_excel('bd.xlsx',sheet_name='copas')
-partidas = pd.read_excel('bd.xlsx',sheet_name='partidas')
+#copas = pd.read_excel('bd.xlsx',sheet_name='copas')
+copas = pd.read_csv('Copas.csv')
+partidas = pd.read_csv('Partidas.csv')
 
 #converte a colunas em string
 copas['ano_copa'] = copas['ano_copa'].astype(str)

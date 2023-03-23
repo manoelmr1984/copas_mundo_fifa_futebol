@@ -7,7 +7,8 @@ import pandas as pd
 copas = pd.read_csv('Copas.csv')
 partidas = pd.read_csv('Partidas.csv')
 
-#converte a colunas em string
+
+#converte colunas em string
 copas['ano_copa'] = copas['ano_copa'].astype(str)
 partidas['ano_copa'] = partidas['ano_copa'].astype(str)
 partidas['id_partida'] = partidas['id_partida'].astype(str)
@@ -39,7 +40,7 @@ img_copa = filtra_copa.iloc[0]['img_logo']
 st.sidebar.image(img_copa, width = 210)
 #st.header(titulo_copa)
 
-tab1, tab2, tab3 = st.tabs(['RESUMO COPA', 'TABELA DE JOGOS', 'HISTÓRICO'])
+tab1, tab2, tab3 = st.tabs(['RESUMO COPA', 'TABELA DE JOGOS', 'HISTÓRICO COPAS'])
 with tab1:
     st.markdown('**TOP 4**')
     #INSERINDO INFORMAÇÕES DA COPA FILTRADA
@@ -147,20 +148,43 @@ with tab2:
 
 with tab3:
     st.markdown('**OS CAMPEÕES**')
-    #campeões
-    copas = copas.rename(columns={'campeao': 'PAÍS CAMPEÃO', 'img_campeao': 'BANDEIRA'})
-    campeoes = copas.groupby(by=['PAÍS CAMPEÃO','BANDEIRA']).sum()[['Conta']]
-    campeoes = campeoes.rename(columns={'Conta': 'TÍTULOS'})
+
+    campeoes = copas.groupby(by=['campeao','img_campeao']).sum()[['Conta']]
+    campeoes = campeoes.rename(columns={'Conta': 'titulos'})
     campeoes = campeoes.reset_index()
 
+    listagem = []
+    lista = []
+    lista_campeoes = campeoes['campeao'].values.tolist()
+
+    for campeao in lista_campeoes:
+        listagem_ano = []
+        for x in range(len(copas)):
+            i = copas['campeao'][x]
+            ano = copas['ano_copa'][x]
+            if i == campeao:
+                listagem_ano.append(ano)
+                listagem.append([campeao, copas['img_campeao'][x], len(listagem_ano), listagem_ano])
+
+        registro = len(listagem)-1
+        lista.append(listagem[registro])
+
+    #criando a tabela
+    resumo_campeoes = pd.DataFrame(lista, columns = ['PAÍSES CAMPEÕES', 'BANDEIRA', '🏆', 'LISTA DE ANO DAS CONQUISTAS'])#TÍTULOS
+
+    resumo_campeoes['LISTA DE ANO DAS CONQUISTAS'] = resumo_campeoes['LISTA DE ANO DAS CONQUISTAS'].apply(lambda x: str(x).replace("[",""))
+    resumo_campeoes['LISTA DE ANO DAS CONQUISTAS'] = resumo_campeoes['LISTA DE ANO DAS CONQUISTAS'].apply(lambda x: str(x).replace("]",""))
+    resumo_campeoes['LISTA DE ANO DAS CONQUISTAS'] = resumo_campeoes['LISTA DE ANO DAS CONQUISTAS'].apply(lambda x: str(x).replace("'",""))
+    resumo_campeoes['LISTA DE ANO DAS CONQUISTAS'] = resumo_campeoes['LISTA DE ANO DAS CONQUISTAS'].apply(lambda x: str(x).replace(","," |"))
+
     def path_to_image_html(path):
-        return '<img src="' + path + '" width="50" >'
+        return '<img src="' + path + '" width="40" >'
     
     st.markdown(
-        campeoes.to_html(escape=False, formatters=dict(BANDEIRA=path_to_image_html)),
+        resumo_campeoes.to_html(escape=False, formatters=dict(BANDEIRA=path_to_image_html)),
         unsafe_allow_html=True,
     )
-    
+
     st.markdown('---')
     st.markdown('**EVOLUÇÃO DAS COPAS EM NÚMEROS**')
     select_opcao = st.selectbox('Selecione uma copa abaixo:', ['Gol Marcados', 'Média Gols', 'Partidas', 'Participantes', 'Público'])
@@ -176,7 +200,7 @@ with tab3:
     elif select_opcao == 'Público':
         evolucao_copas = (copas.groupby(by=['ano_copa']).sum()[['publico_copa']])
 
-    st.line_chart(evolucao_copas)
+    st.line_chart(evolucao_copas, height=300)
 
 
 st.markdown("---")
@@ -203,6 +227,6 @@ with twitter:
     st.markdown(f'''<p> <a href="{url}"><img src="{logo}" widht="30" height="30"></p''', unsafe_allow_html=True)
 
 with gmail:
-    logo = 'https://www.vectorlogo.zone/logos/gmail/gmail-ar21.png'
+    logo = 'https://1drv.ms/i/s!AhTpg3jKD9Je7EGg7KPe8yhpJTmA?e=6NIjbc'
     url = 'manoelmr1984@gmail.com'
     st.markdown(f'''<p> <a href="{url}"><img src="{logo}" widht="30" height="30"></p''', unsafe_allow_html=True)

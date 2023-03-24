@@ -1,7 +1,7 @@
 #importando bibliotecas
 import streamlit as st
 import pandas as pd
-import plotly.express as px
+#import plotly.express as px
 
 
 #carregando os dados
@@ -43,9 +43,10 @@ logo_copa = filtra_copa.iloc[0]['img_logo']
 
 #inserindo o título da página
 titulo_copa = filtra_copa.iloc[0]['desc_copa']
+ano_copa = filtra_copa.iloc[0]['ano_copa']
 img_copa = filtra_copa.iloc[0]['img_logo']
 st.sidebar.image(img_copa, width = 210)
-#st.header(titulo_copa)
+st.header(titulo_copa)
 
 tab1, tab2, tab3 = st.tabs(['RESUMO COPA', 'TABELA DE JOGOS', 'HISTÓRICO COPAS'])
 with tab1:
@@ -111,14 +112,55 @@ with tab1:
     partidas = partidas.loc[partidas['ano_copa'] == filtra_copa.iloc[0]['ano_copa']]
 
     #gera gráfico gols partidas fase
-    graf_gol_partida_fase = px.box(partidas, 
-                                   x='fase_grupo', 
-                                   y=['gols_na_partida'], 
-                                   title='GOLS MARCADOS por FASE', 
-                                   points='all')
+    #graf_gol_partida_fase = px.box(partidas, 
+    #                               x='fase_grupo', 
+    #                               y=['gols_na_partida'], 
+    #                               title='GOLS MARCADOS por FASE', 
+    #                               points='all')
     
     #plota gráfico gols partidas fase
-    st.plotly_chart(graf_gol_partida_fase)
+    #st.plotly_chart(graf_gol_partida_fase)
+
+
+    ######################################################################################################################
+    df_eventos = pd.read_excel('bd.xlsx','eventos')
+    df_eventos[['id_partida','cod_atleta', 'minuto']] = df_eventos[['id_partida', 'cod_atleta', 'minuto']] .astype('Int64')
+    df_eventos[['id_partida','cod_atleta', 'cod_pais']] = df_eventos[['id_partida','cod_atleta', 'cod_pais']] .astype(str)
+    
+    #st.dataframe(df_eventos)
+    #......................................................................................................................
+    eventos_ano_copa = pd.merge(df_eventos, partidas[['id_partida', 'ano_copa']], on=['id_partida'], how='left')
+    eventos_ano_copa = eventos_ano_copa.loc[eventos_ano_copa['ano_copa'] == ano_copa]#filtra_copa]#selected_copa]
+    #st.dataframe(eventos_ano_copa)
+    #......................................................................................................................
+    tb_eventos = pd.read_excel('bd.xlsx', 'tb_eventos')
+    #tb_eventos.info()
+    #......................................................................................................................
+    eventos = pd.merge(eventos_ano_copa, tb_eventos[['cod_evento', 'desc_evento', 'desc_evento2', 'img_evento']], on=['cod_evento'], how='left')
+    #eventos.info()
+    #......................................................................................................................
+    #pega marcadores
+    marcadores = eventos[(eventos['cod_evento'] == 'G') | (eventos['cod_evento'] == 'P')]
+    marcadores['gols'] = int(1)
+    #marcadores
+    #......................................................................................................................
+    artilheiros = marcadores.groupby('cod_atleta')['cod_atleta'].count()
+    #artilheiros.info()
+    #......................................................................................................................
+    #os artilheiros
+    artilheiros = marcadores.groupby(by=['nome_atleta', 'img_atleta']).sum()[['gols']].sort_values(['gols'], ascending=False)
+    artilheiros = artilheiros.reset_index()
+
+    artilheiros = artilheiros.rename(columns={'img_atleta': 'img'})
+    def path_to_image_html(path):
+        return '<img src="'+ path + '" width="50" >'
+
+    st.markdown(
+        artilheiros.to_html(escape=False, formatters=dict(img=path_to_image_html)),
+        unsafe_allow_html=True,
+    )
+    ######################################################################################################################
+
 with tab2:
     #tabela de jogos filtrando a copa selecionada
     st.markdown('**TABELA DE JOGOS**')
@@ -164,6 +206,8 @@ with tab2:
         unsafe_allow_html=True,
     )
 
+    st.text('Referência do placar: (prorrogação) [penaltis]')
+
 with tab3:
     st.markdown('**OS CAMPEÕES**')
 
@@ -203,11 +247,11 @@ with tab3:
         unsafe_allow_html=True,
     )
 
-    graf_gols_campeao = px.box(copas, x='campeao', 
-                               y='gols_marcados_copa', 
-                               title='CORRELAÇÃO ENTRE CAMPEÕES x GOLS MARCADOS NAS COPAS CONQUISTADAS', 
-                               points='all')
-    st.plotly_chart(graf_gols_campeao)
+    #graf_gols_campeao = px.box(copas, x='campeao', 
+    #                           y='gols_marcados_copa', 
+    #                           title='CORRELAÇÃO ENTRE CAMPEÕES x GOLS MARCADOS NAS COPAS CONQUISTADAS', 
+    #                           points='all')
+    #st.plotly_chart(graf_gols_campeao)
 
     st.markdown('---')
     st.markdown('**EVOLUÇÃO DAS COPAS EM NÚMEROS**')
@@ -225,7 +269,6 @@ with tab3:
         evolucao_copas = (copas.groupby(by=['ano_copa']).sum()[['publico_copa']])
 
     st.line_chart(evolucao_copas, height=300)
-
 
 
 st.markdown("---")

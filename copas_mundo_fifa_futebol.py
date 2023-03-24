@@ -1,7 +1,8 @@
 #importando bibliotecas
 import streamlit as st
 import pandas as pd
-import plotly as px
+import plotly
+import plotly-express as px
 
 
 #carregando os dados

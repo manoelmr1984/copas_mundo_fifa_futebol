@@ -1,6 +1,7 @@
 #importando bibliotecas
 import streamlit as st
 import pandas as pd
+import plotly.express as px
 
 
 #carregando os dados
@@ -12,6 +13,7 @@ partidas = pd.read_csv('Partidas.csv')
 copas['ano_copa'] = copas['ano_copa'].astype(str)
 partidas['ano_copa'] = partidas['ano_copa'].astype(str)
 partidas['id_partida'] = partidas['id_partida'].astype(str)
+partidas['fase_grupo'] = partidas['fase_grupo'].astype(str)
 
 #insere a coluna "ano_copa_sede" concatenando "ano_copa" + "sede"
 copas['ano_copa_sede'] = copas['ano_copa']+" - "+copas['sede']
@@ -19,9 +21,14 @@ copas['ano_copa_sede'] = copas['ano_copa']+" - "+copas['sede']
 #insere a coluna de média gols por partidas na copa
 copas['gols_partida'] = copas['gols_marcados_copa'] / copas['quant_partidas_copa']
 
+#insere coluna de total de gols da partida
+partidas['gols_na_partida'] = partidas['gols_time1'] + partidas['gols_time2']
+
 #convertendo a coluna "publico_copa" em inteiro
 copas['publico_copa'] = copas['publico_copa'].apply(lambda x: str(x).replace(".",""))
 copas['publico_copa'] = copas['publico_copa'].astype('int64')
+
+#partidas['placar'] = partidas['placar'].replace('-','x')
 
 #cria uma lista para listbox
 list_ano_copa_sede = []
@@ -101,10 +108,21 @@ with tab1:
     with col_publico:
         st.text(str(publico_total) + ' público')
 
+    partidas = partidas.loc[partidas['ano_copa'] == filtra_copa.iloc[0]['ano_copa']]
+
+    #gera gráfico gols partidas fase
+    graf_gol_partida_fase = px.box(partidas, 
+                                   x='fase_grupo', 
+                                   y=['gols_na_partida'], 
+                                   title='GOLS MARCADOS por FASE', 
+                                   points='all')
+    
+    #plota gráfico gols partidas fase
+    st.plotly_chart(graf_gol_partida_fase)
 with tab2:
     #tabela de jogos filtrando a copa selecionada
     st.markdown('**TABELA DE JOGOS**')
-    partidas = partidas.loc[partidas['ano_copa'] == filtra_copa.iloc[0]['ano_copa']]
+
     partidas['ref_fase_grupo'] = partidas['tipo_fase'] + " - " + partidas['fase_grupo']
     partidas = partidas[['ano_copa', 'data_hora', 'id_fase', 'fase_grupo', 'tipo_fase', 'time1', 
                         'gols_time1', 'placar', 'gols_time2', 'time2', 'win_conditions', 'ref_fase_grupo', 'img_time1', 'img_time2']]
@@ -185,6 +203,12 @@ with tab3:
         unsafe_allow_html=True,
     )
 
+    graf_gols_campeao = px.box(copas, x='campeao', 
+                               y='gols_marcados_copa', 
+                               title='CORRELAÇÃO ENTRE CAMPEÕES x GOLS MARCADOS NAS COPAS CONQUISTADAS', 
+                               points='all')
+    st.plotly_chart(graf_gols_campeao)
+
     st.markdown('---')
     st.markdown('**EVOLUÇÃO DAS COPAS EM NÚMEROS**')
     select_opcao = st.selectbox('Selecione uma copa abaixo:', ['Gol Marcados', 'Média Gols', 'Partidas', 'Participantes', 'Público'])
@@ -201,6 +225,7 @@ with tab3:
         evolucao_copas = (copas.groupby(by=['ano_copa']).sum()[['publico_copa']])
 
     st.line_chart(evolucao_copas, height=300)
+
 
 
 st.markdown("---")

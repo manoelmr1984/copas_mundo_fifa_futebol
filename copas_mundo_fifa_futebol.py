@@ -1,7 +1,6 @@
 #importando bibliotecas
 import streamlit as st
 import pandas as pd
-#import plotly.express as px
 
 
 #carregando os dados
@@ -124,7 +123,7 @@ with tab1:
 
     ######################################################################################################################
     #df_eventos = pd.read_excel('bd.xlsx','eventos')
-    df_eventos = pd.read_csv('eventos')
+    df_eventos = pd.read_csv('eventos.csv')
     df_eventos[['id_partida','cod_atleta', 'minuto']] = df_eventos[['id_partida', 'cod_atleta', 'minuto']] .astype('Int64')
     df_eventos[['id_partida','cod_atleta', 'cod_pais']] = df_eventos[['id_partida','cod_atleta', 'cod_pais']] .astype(str)
     

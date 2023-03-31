@@ -1,10 +1,12 @@
 #importando bibliotecas
 import streamlit as st
 import pandas as pd
+from openpyxl import Workbook
 
+copas = Workbook('bd.xlsx', 'copas')
 
 #carregando os dados
-copas = pd.read_excel('bd.xlsx', 'copas')
+#copas = pd.read_excel('bd.xlsx', 'copas')
 partidas = pd.read_excel('bd.xlsx', 'partidas')
 
 

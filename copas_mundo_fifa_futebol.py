@@ -212,7 +212,7 @@ with tab2:
 with tab3:
     st.markdown('**OS CAMPEÕES**')
 
-    campeoes = copas.groupby(by=['campeao','img_campeao']).sum()[['Conta']]
+    campeoes = copas.groupby(by=['campeao','img_campeao']).sum()[['Conta']].sort_values(['Conta'], ascending=False)
     campeoes = campeoes.rename(columns={'Conta': 'titulos'})
     campeoes = campeoes.reset_index()
 

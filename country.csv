@@ -1,0 +1,85 @@
+﻿cod_pais,desc_pais,country,abrev_pais,desc_pais_2,bandeira_pais
+15,South Africa,South Africa,RSA,África do Sul,https://api.fifa.com/api/v3/picture/flags-sq-5/RSA
+10,Germany,Germany,GER,Alemanha,https://api.fifa.com/api/v3/picture/flags-sq-5/GER
+41,Germany,Germany FR,FRG,Alemanha Ocidental,https://api.fifa.com/api/v3/picture/flags-sq-5/GER
+19,Angola,Angola,ANG,Angola,https://api.fifa.com/api/v3/picture/flags-sq-5/ANG
+71,Saudi Arabia,Saudi Arabia,KSA,Arábia Saudita,https://api.fifa.com/api/v3/picture/flags-sq-5/KSA
+18,Algeria,Algeria,ALG,Argélia,https://api.fifa.com/api/v3/picture/flags-sq-5/ALG
+11,Argentina,Argentina,ARG,Argentina,https://api.fifa.com/api/v3/picture/flags-sq-5/ARG
+20,Australia,Australia,AUS,Austrália,https://api.fifa.com/api/v3/picture/flags-sq-5/AUS
+21,Austria,Austria,AUT,Áustria,https://api.fifa.com/api/v3/picture/flags-sq-5/AUT
+22,Belgium,Belgium,BEL,Bélgica,https://api.fifa.com/api/v3/picture/flags-sq-5/BEL
+23,Bolivia,Bolivia,BOL,Bolívia,https://api.fifa.com/api/v3/picture/flags-sq-5/BOL
+65,Bosnia and Herzegovina,Bosnia and Herzegovina,BIH,Bósnia-Herzegovina,https://api.fifa.com/api/v3/picture/flags-sq-5/BIH
+4,Brazil,Brazil,BRA,Brasil,https://api.fifa.com/api/v3/picture/flags-sq-5/BRA
+24,Bulgaria,Bulgaria,BUL,Bulgária,https://api.fifa.com/api/v3/picture/flags-sq-5/BUL
+25,C te d'Ivoire,C te d'Ivoire,CIV,C. do Marfim,https://api.fifa.com/api/v3/picture/flags-sq-5/CIV
+26,Cameroon,Cameroon,CMR,Camarões,https://api.fifa.com/api/v3/picture/flags-sq-5/CMR
+27,Canada,Canada,CAN,Canadá,https://api.fifa.com/api/v3/picture/flags-sq-5/CAN
+7,Chile,Chile,CHI,Chile,https://api.fifa.com/api/v3/picture/flags-sq-5/CHI
+28,China PR,China PR,CHN,China,https://api.fifa.com/api/v3/picture/flags-sq-5/CHN
+29,Colombia,Colombia,COL,Colômbia,https://api.fifa.com/api/v3/picture/flags-sq-5/COL
+52,Korea DPR,Korea DPR,PRK,Coréia do Norte,https://api.fifa.com/api/v3/picture/flags-sq-5/PRK
+14,Korea Republic,Korea Republic,KOR,Coreia do Sul,https://api.fifa.com/api/v3/picture/flags-sq-5/KOR
+30,Costa Rica,Costa Rica,CRC,Costa Rica,https://api.fifa.com/api/v3/picture/flags-sq-5/CRC
+31,Croatia,Croatia,CRO,Croácia,https://api.fifa.com/api/v3/picture/flags-sq-5/CRO
+32,Cuba,Cuba,CUB,Cuba,https://api.fifa.com/api/v3/picture/flags-sq-5/CUB
+35,Denmark,Denmark,DEN,Dinamarca,https://api.fifa.com/api/v3/picture/flags-sq-5/DEN
+38,Egypt,Egypt,EGY,Egito,https://api.fifa.com/api/v3/picture/flags-sq-5/EGY
+39,El Salvador,El Salvador,SLV,El Salvador,https://api.fifa.com/api/v3/picture/flags-sq-5/SLV
+69,United Arab Emirates,United Arab Emirates,UAE,Emirados Árabes Unidos,https://api.fifa.com/api/v3/picture/flags-sq-5/UAE
+37,Ecuador,Ecuador,ECU,Equador,https://api.fifa.com/api/v3/picture/flags-sq-5/ECU
+72,Scotland,Scotland,SCO,Escócia,https://api.fifa.com/api/v3/picture/flags-sq-5/SCO
+75,Slovakia,Slovakia,SVK,Eslováquia,https://api.fifa.com/api/v3/picture/flags-sq-5/SVK
+76,Slovenia,Slovenia,SVN,Eslovênia,https://api.fifa.com/api/v3/picture/flags-sq-5/SVN
+12,Spain,Spain,ESP,Espanha,https://api.fifa.com/api/v3/picture/flags-sq-5/ESP
+13,USA,USA,USA,Estados Unidos,https://api.fifa.com/api/v3/picture/flags-sq-5/USA
+3,France,France,FRA,França,https://api.fifa.com/api/v3/picture/flags-sq-5/FRA
+82,Wales,Wales,WAL,Gales,https://api.fifa.com/api/v3/picture/flags-sq-5/WAL
+42,Ghana,Ghana,GHA,Gana,https://api.fifa.com/api/v3/picture/flags-sq-5/GHA
+43,Greece,Greece,GRE,Grécia,https://api.fifa.com/api/v3/picture/flags-sq-5/GRE
+44,Haiti,Haiti,HAI,Haiti,https://api.fifa.com/api/v3/picture/flags-sq-5/HAI
+55,Netherlands,Netherlands,NED,Holanda,https://api.fifa.com/api/v3/picture/flags-sq-5/NED
+45,Honduras,Honduras,HON,Honduras,https://api.fifa.com/api/v3/picture/flags-sq-5/HON
+46,Hungary,Hungary,HUN,Hungria,https://api.fifa.com/api/v3/picture/flags-sq-5/HUN
+36,Dutch East Indies,Dutch East Indies,INH,Índias Holandesas,https://api.fifa.com/api/v3/picture/flags-sq-5/INH
+8,England,England,ENG,Inglaterra,https://api.fifa.com/api/v3/picture/flags-sq-5/ENG
+48,Iran,Iran,IRN,Irã,https://api.fifa.com/api/v3/picture/flags-sq-5/IRN
+49,Iraq,Iraq,IRQ,Iraque,https://api.fifa.com/api/v3/picture/flags-sq-5/IRQ
+66,Republic of Ireland,Republic of Ireland,IRL,Irlanda,https://api.fifa.com/api/v3/picture/flags-sq-5/IRL
+58,Northern Ireland,Northern Ireland,NIR,Irlanda do Norte,https://api.fifa.com/api/v3/picture/flags-sq-5/NIR
+47,Iceland,Iceland,ICE,Islândia,https://api.fifa.com/api/v3/picture/flags-sq-5/ISL
+50,Israel,Israel,ISR,Israel,https://api.fifa.com/api/v3/picture/flags-sq-5/ISR
+2,Italy,Italy,ITA,Itália,https://api.fifa.com/api/v3/picture/flags-sq-5/ITA
+83,Yugoslavia,Yugoslavia,YUG,Iugoslávia,https://api.fifa.com/api/v3/picture/flags-sq-5/YUG
+51,Jamaica,Jamaica,JAM,Jamaica,https://api.fifa.com/api/v3/picture/flags-sq-5/JAM
+17,Japan,Japan,JPN,Japão,https://api.fifa.com/api/v3/picture/flags-sq-5/JPN
+53,Kuwait,Kuwait,KUW,Kuwait,https://api.fifa.com/api/v3/picture/flags-sq-5/KUW
+54,Morocco,Morocco,MAR,Marrocos,https://api.fifa.com/api/v3/picture/flags-sq-5/MAR
+9,Mexico,Mexico,MEX,México,https://api.fifa.com/api/v3/picture/flags-sq-5/MEX
+57,Nigeria,Nigeria,NGA,Nigéria,https://api.fifa.com/api/v3/picture/flags-sq-5/NGA
+59,Norway,Norway,NOR,Noruega,https://api.fifa.com/api/v3/picture/flags-sq-5/NOR
+56,New Zealand,New Zealand,NZL,Nova Zelândia,https://api.fifa.com/api/v3/picture/flags-sq-5/NZL
+60,Panama,Panama,PAN,Panamá,https://api.fifa.com/api/v3/picture/flags-sq-5/PAN
+61,Paraguay,Paraguay,PAR,Paraguai,https://api.fifa.com/api/v3/picture/flags-sq-5/PAR
+62,Peru,Peru,PER,Peru,https://api.fifa.com/api/v3/picture/flags-sq-5/PER
+63,Poland,Poland,POL,Polônia,https://api.fifa.com/api/v3/picture/flags-sq-5/POL
+64,Portugal,Portugal,POR,Portugal,https://api.fifa.com/api/v3/picture/flags-sq-5/POR
+40,Germany,German DR,GDR,RD Alemanha,https://api.fifa.com/api/v3/picture/flags-sq-5/GDR
+33,Czech Republic,Czech Republic,CZE,República Tcheca,https://api.fifa.com/api/v3/picture/flags-sq-5/CZE
+70,Romania,Romania,ROU,Romênia,https://api.fifa.com/api/v3/picture/flags-sq-5/ROU
+16,Russia,Russia,RUS,Rússia,https://api.fifa.com/api/v3/picture/flags-sq-5/RUS
+73,Senegal,Senegal,SEN,Senegal,https://api.fifa.com/api/v3/picture/flags-sq-5/SEN
+74,Serbia,Serbia,SRB,Sérvia,https://api.fifa.com/api/v3/picture/flags-sq-5/SRB
+67,Serbia and Montenegro,Serbia and Montenegro,SCG,Sérvia e Montenegro,https://api.fifa.com/api/v3/picture/flags-sq-5/SCG
+6,Sweden,Sweden,SWE,Suécia,https://api.fifa.com/api/v3/picture/flags-sq-5/SWE
+5,Switzerland,Switzerland,SUI,Suíça,https://api.fifa.com/api/v3/picture/flags-sq-5/SUI
+34,Czechoslovakia,Czechoslovakia,TCH,Tchecoslováquia,https://api.fifa.com/api/v3/picture/flags-sq-5/TCH
+78,Togo,Togo,TOG,Togo,https://api.fifa.com/api/v3/picture/flags-sq-5/TOG
+68,Trinidad and Tobago,Trinidad and Tobago,TRI,Trinidad e Tobago,https://api.fifa.com/api/v3/picture/flags-sq-5/TRI
+79,Tunisia,Tunisia,TUN,Tunísia,https://api.fifa.com/api/v3/picture/flags-sq-5/TUN
+80,Turkey,Turkey,TUR,Turquia,https://api.fifa.com/api/v3/picture/flags-sq-5/TUR
+81,Ukraine,Ukraine,UKR,Ucrânia,https://api.fifa.com/api/v3/picture/flags-sq-5/UKR
+77,Soviet Union,Soviet Union,URS,URSS,https://api.fifa.com/api/v3/picture/flags-sq-5/URS
+1,Uruguay,Uruguay,URU,Uruguai,https://api.fifa.com/api/v3/picture/flags-sq-5/URU
+84,Zaire,Zaire,ZAI,Zaire,https://api.fifa.com/api/v3/picture/flags-sq-5/ZAI

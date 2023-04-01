@@ -1,13 +1,11 @@
 #importando bibliotecas
 import streamlit as st
 import pandas as pd
-from openpyxl import Workbook
 
-copas = Workbook('bd.xlsx', 'copas')
 
 #carregando os dados
-#copas = pd.read_excel('bd.xlsx', 'copas')
-partidas = pd.read_excel('bd.xlsx', 'partidas')
+copas = pd.read_csv('copas.csv')
+partidas = pd.read_csv('partidas.csv')
 
 
 #converte colunas em string
@@ -125,8 +123,7 @@ with tab1:
 
 
     ######################################################################################################################
-    df_eventos = pd.read_excel('bd.xlsx','eventos')
-    #df_eventos = pd.read_csv('eventos.csv')
+    df_eventos = pd.read_csv('eventos.csv')
     df_eventos[['id_partida','cod_atleta', 'minuto']] = df_eventos[['id_partida', 'cod_atleta', 'minuto']] .astype('Int64')
     df_eventos[['id_partida','cod_atleta', 'cod_pais']] = df_eventos[['id_partida','cod_atleta', 'cod_pais']] .astype(str)
     
@@ -136,8 +133,7 @@ with tab1:
     eventos_ano_copa = eventos_ano_copa.loc[eventos_ano_copa['ano_copa'] == ano_copa]#filtra_copa]#selected_copa]
     #st.dataframe(eventos_ano_copa)
     #......................................................................................................................
-    tb_eventos = pd.read_excel('bd.xlsx', 'tb_eventos')
-    #tb_eventos = pd.read_csv('tb_eventos.csv')
+    tb_eventos = pd.read_csv('tb_eventos.csv')
     #tb_eventos.info()
     #......................................................................................................................
     eventos = pd.merge(eventos_ano_copa, tb_eventos[['cod_evento', 'desc_evento', 'desc_evento2', 'img_evento']], on=['cod_evento'], how='left')
